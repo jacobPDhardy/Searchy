@@ -17,7 +17,8 @@ static List<T> SuperCoolSearch<T>(List<T> objectList, string search)
                     string? propertyValueString = propertyValue.ToString();
                     if (propertyValueString is not null && propertyValueString.ToLower().IndexOf(searchLowerCase) is not notFound)
                     {
-                        filteredObjectList.Add(@object);                       
+                        filteredObjectList.Add(@object);
+                        break;
                     }
                 }
             }
